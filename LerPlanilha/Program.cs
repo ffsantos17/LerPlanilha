@@ -59,11 +59,11 @@ class ReadingCSV
 
 
 
-                //MySqlCommand command = new MySqlCommand("INSERT INTO disciplinas(disciplina_nome, disciplina_periodo, disciplina_categoria, disciplina_dificuldade, disciplina_creditos, disciplina_horaAula, disciplina_horaRelogio, disciplina_qtdTeorica, disciplina_qtdPratica, disciplina_ementa)" +
-                //"VALUES('" + nome + "','" + periodo + "','" + categoria + "','" + dificuldade + "','" + creditos + "','" + horaAula + "','" + horaRelogio + "','" + qtdTeorica + "','" + qtdPratica + "','" + ementa + "')", mConn);
+                MySqlCommand command = new MySqlCommand("INSERT INTO disciplinas(disciplina_nome, disciplina_periodo, disciplina_categoria, disciplina_dificuldade, disciplina_creditos, disciplina_horaAula, disciplina_horaRelogio, disciplina_qtdTeorica, disciplina_qtdPratica, disciplina_ementa)" +
+                "VALUES('" + nome + "','" + periodo + "','" + categoria + "','" + dificuldade + "','" + creditos + "','" + horaAula + "','" + horaRelogio + "','" + qtdTeorica + "','" + qtdPratica + "','" + ementa + "')", mConn);
 
                 //Executa a Query SQL
-                //command.ExecuteNonQuery();
+                command.ExecuteNonQuery();
 
                 
 
